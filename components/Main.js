@@ -1,2 +1,6 @@
 import html from "html-literal";
-export default () => html `<section id="Main">`
+import * as views from "./views";
+
+export default state => html`
+  ${views[state.view](state)};
+`;
