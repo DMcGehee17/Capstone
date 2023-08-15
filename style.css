@@ -10,8 +10,9 @@ h1 {
 .myNav {
   font-family: sans-serif;
   color: black;
-  justify-content: flex-end;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 100px;
 
 }
 .myNav ul {
@@ -26,8 +27,17 @@ h2 {
 
 input{
   background-color: white;
+  max-width: 300px;
 }
 
 footer{
   padding-bottom: 10px;
 }
+
+.wrapper {
+  display: grid;
+grid-template-columns: 200px;
+
+}
+
+
