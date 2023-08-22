@@ -2,8 +2,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import whatevertheroute2 from "./routers/whatevertheroute2.js";
-import whatevertheroute from "./routers/whatevertheroute.js";
+// import whatevertheroute2 from "./routers/whatevertheroute2.js";
+// import whatevertheroute from "./routers/whatevertheroute.js";
 
 // Initialize the Express application
 const app = express();
@@ -64,8 +64,8 @@ app.get("/status", (request, response) => {
 });
 
 // only handles requests with specified routes
-app.use("/whatevertheroute2", whatevertheroute2);
-app.use("/whatevertheroute", whatevertheroute);
+// app.use("/whatevertheroute2", whatevertheroute2);
+// app.use("/whatevertheroute", whatevertheroute);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
