@@ -12,15 +12,6 @@ export default () => html `
     <p></p>
     <h2>Need a movie to watch? Start your search here!</h2>
     </body>
-    <nav class="myNav">
-        <ul>
-            <li><a href="search.html">Search</a></li>
-            <li><a href="about.html">About FindMeAMovie</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="picks.html">Editor's Picks</a></li>
-            <li><a href="forum.html">Fan Forum</a></li>
-        </ul>
-    </nav>
     <div class="wrapper">
     <h3>Title</h3>
     <input></input>

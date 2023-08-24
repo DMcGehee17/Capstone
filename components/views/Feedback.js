@@ -1,6 +1,6 @@
 import html from "html-literal";
 export default () => html `
-[<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <link href="style.css" rel="stylesheet" />
   <head lang="en">
@@ -22,5 +22,5 @@ export default () => html `
 </form>
   </head>
   <div id="root"></div>
-</html>]
+</html>
 `;

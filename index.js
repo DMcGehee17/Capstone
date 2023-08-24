@@ -14,11 +14,16 @@ function render(state = store.Home) {
     ${Footer()}
     `;
   afterRender(state);
-
+  console.log("Hello");
   router.updatePageLinks();
 }
 
-
+function afterRender(state) {
+  // add menu toggle to bars icon in nav bar
+  // document.querySelector(".fa-bars").addEventListener("click", () => {
+  //   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+  // });
+}
 
 router.hooks({
   before: (done, params) => {
@@ -64,6 +69,19 @@ router.hooks({
             done();
           });
         break;
+      case "Movies":
+        axios
+          .get(`http://localhost:4040/movies`)
+          .then((response) => {
+            store.Movies.movies = response.data;
+            console.log(response.data);
+            done();
+          })
+          .catch((error) => {
+            console.log("Failed to fetch movies", error);
+            done();
+          });
+        break;
       default:
         done();
     }
@@ -74,23 +92,23 @@ router.hooks({
         ? capitalize(params.data.view)
         : "Home";
 
-    if (view === "Home") {
-      document
-        .getElementById("searchForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevents the form from submitting in the traditional way
-          const query = document.getElementById("searchQuery").value;
-          axios
-            .get(`/movies/search?year=${query}`)
-            .then((response) => {
-              store.MovieSearch.movies = response.data;
-              render(store.MovieSearch); // Re-render the view with updated data
-            })
-            .catch((error) => {
-              console.error("Failed to fetch movies:", error);
-            });
-        });
-    }
+    // if (view === "Home") {
+    //   document
+    //     .getElementById("searchForm")
+    //     .addEventListener("submit", function (event) {
+    //       event.preventDefault(); // Prevents the form from submitting in the traditional way
+    //       const query = document.getElementById("searchQuery").value;
+    //       axios
+    //         .get(`/movies/search?year=${query}`)
+    //         .then((response) => {
+    //           store.MovieSearch.movies = response.data;
+    //           render(store.MovieSearch); // Re-render the view with updated data
+    //         })
+    //         .catch((error) => {
+    //           console.error("Failed to fetch movies:", error);
+    //         });
+    //     });
+    // }
 
     render(store[view]);
   },
