@@ -4,21 +4,19 @@ const movieSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z0-9 .,!?'"-]*$/,
   },
   year: {
-    type: String,
-    required: true,
-    enum: ["thin", "chicago", "deep-dish", "hella-thick"]
+    type: Number,
   },
   genre: {
     type: String,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z0-9 .,!?'"-]*$/,
   },
   description: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z0-9 .,!?'"-]*$/,
   },
 });
 

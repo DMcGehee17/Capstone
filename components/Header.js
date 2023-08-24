@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default (state) => html `<section id="jumbotron"><h2></h2>
-<a href="index.html">"Call to Action" "Button"</a>
+${state.header}
 </section>
 <h3>
   </h3>`;

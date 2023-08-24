@@ -8,7 +8,7 @@ export default links => html`
                     <a href="/${link.title}" title="${link.title}" data-navigo>
                       ${link.text}
                     </a>
-                  </li>`;
+                  </li>`
         })};
       </div>
     </ul>

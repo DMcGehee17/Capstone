@@ -1,7 +1,8 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "Routines", text: "Routines" },
-  { title: "Mood", text: "Mood" },
-  { title: "Rewards", text: "Rewards" },
-  { title: "About", text: "About" }
+  { title: "About", text: "About" },
+  { title: "Feedback", text: "Feedback" },
+  { title: "Forum", text: "Forum" },
+  { title: "Picks", text: "Picks" },
+  { title: "Movies", text: "Movies" }
 ];
