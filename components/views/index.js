@@ -3,3 +3,4 @@ export { default as About } from "./About";
 export { default as Feedback } from "./Feedback";
 export { default as Picks } from "./Picks";
 export { default as Forum } from "./Forum";
+export { default as Movies } from "./Movies";

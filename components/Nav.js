@@ -9,7 +9,7 @@ export default links => html`
                       ${link.text}
                     </a>
                   </li>`
-        })};
+        })}
       </div>
     </ul>
   </nav>
