@@ -75,6 +75,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns for content */
   gap: 20px; /* Space between grid items */
+  color: #f7f7f7;
   padding: 20px;
 }
 

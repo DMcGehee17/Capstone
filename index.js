@@ -71,7 +71,7 @@ router.hooks({
         break;
       case "Movies":
         axios
-          .get(`http://localhost:4040/movies`)
+          .get(`/movies`)
           .then((response) => {
             store.Movies.movies = response.data;
             console.log(response.data);
