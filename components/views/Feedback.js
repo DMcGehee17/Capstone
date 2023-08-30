@@ -1,10 +1,5 @@
 import html from "html-literal";
 export default () => html `
-<!DOCTYPE html>
-<html>
-  <link href="style.css" rel="stylesheet" />
-  <head lang="en">
-    <meta charset="UTF-8" />
     <title>FindMeAMovie</title>
     <h1>Feedback Submission</h1>
     <h2>We want to hear from you! Please fill out the form below to let us know what we can do better.</h2>
