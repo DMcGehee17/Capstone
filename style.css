@@ -52,6 +52,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  color: #f7f7f7;
+}
+
 /* Input fields styling */
 input {
   background-color: #f7f7f7;
