@@ -1,43 +1,120 @@
+/* Reset some default styles and set a general background color */
 * {
-  background-color: #DCEDFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1b1b2f; /* Dark background for a cinematic feel */
+  font-family: 'Arial', sans-serif; /* Default font for the entire site */
 }
 
+/* Main title styling */
 h1 {
-  font-family: monospace;
+  font-family: 'Courier New', monospace;
   font-size: 50px;
-  color: black;
+  color: #f7f7f7; /* Light color for contrast against dark background */
+  text-align: center;
+  margin-top: 20px;
 }
-.myNav {
-  font-family: sans-serif;
-  color: black;
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 100px;
 
+/* Navigation styling */
+.myNav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Distribute nav items evenly */
+  justify-items: center;
+  padding: 20px 0;
+  background-color: #27293d; /* Slightly different shade for the navbar */
 }
+
 .myNav ul {
   list-style: none;
-  padding: 0px;
 }
 
+.myNav li {
+  display: inline;
+  margin: 0 15px;
+}
 
+.myNav a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.myNav a:hover {
+  color: #ff6b6b; /* Color change on hover for interactivity */
+}
+
+/* Subtitles and other headers */
 h2 {
   font-size: 25px;
+  color: #f7f7f7;
+  margin-bottom: 20px;
 }
 
-input{
-  background-color: white;
+/* Input fields styling */
+input {
+  background-color: #f7f7f7;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* Rounded corners */
   max-width: 300px;
+  width: 100%;
 }
 
-footer{
-  padding-bottom: 10px;
+/* Footer styling */
+footer {
+  padding: 20px 0;
+  background-color: #27293d;
+  color: #f7f7f7;
+  text-align: center;
 }
 
+/* Wrapper for content */
 .wrapper {
   display: grid;
-grid-template-columns: 200px;
-
+  grid-template-columns: repeat(3, 1fr); /* Three columns for content */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
 }
 
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+/* Basic reset for list styles */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Styling for the navbar */
+.navbar {
+  background-color: #27293d; /* Dark background for cinematic feel */
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav-links {
+  display: flex; /* Horizontal alignment of links */
+  justify-content: space-between; /* Even spacing between links */
+  max-width: 800px; /* Maximum width for the links */
+  margin: 0 auto; /* Centering the links */
+}
+
+.nav-links a {
+  color: #f7f7f7; /* Light color for contrast */
+  text-decoration: none; /* Remove underlines */
+  font-weight: 600; /* Slightly bold for emphasis */
+  padding: 5px 10px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded corners for hover effect */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+  background-color: #ff6b6b; /* Color change on hover */
+}
 

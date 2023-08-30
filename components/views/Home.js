@@ -1,5 +1,5 @@
 import html from "html-literal";
-export default () => html `
+export default (state) => html `
 <!DOCTYPE html>
 <html>
 <link href="style.css" rel="stylesheet" />
@@ -67,10 +67,9 @@ export default () => html `
     <label id="sports" type="radio" name="Sports"><button type="radio"></button> Sports</label>
     <label id="war" type="radio" name="War"><button type="radio"></button> War</label>
   </div>
-    <footer>
-      Future Message Here
-    </footer>
-    <div id="root"></div>
+  <h3>
+    The weather in ${state.weather.city} is ${state.weather.description}. Temperature is ${state.weather.temp}F, and it feels like ${state.weather.feelsLike}F.
+  </h3>
     </html>
 `;
 

@@ -1,3 +1,5 @@
 import html from "html-literal";
 
-export default () => html `<section id="bio">`
+export default (state) => html `<footer>
+        <p> &copy; FindMeAMovie</p>
+    </footer>`;
