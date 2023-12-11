@@ -52,6 +52,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  color: #f7f7f7;
+}
+
 /* Input fields styling */
 input {
   background-color: #f7f7f7;
@@ -60,6 +64,14 @@ input {
   border-radius: 5px; /* Rounded corners */
   max-width: 300px;
   width: 100%;
+}
+
+label {
+  color: #f7f7f7;
+}
+
+textarea {
+  background-color: #f7f7f7;
 }
 
 /* Footer styling */
@@ -75,6 +87,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns for content */
   gap: 20px; /* Space between grid items */
+  color: #f7f7f7;
   padding: 20px;
 }
 
@@ -89,6 +102,7 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #f7f7f7;
 }
 
 /* Styling for the navbar */
